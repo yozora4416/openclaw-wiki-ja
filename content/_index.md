@@ -5,14 +5,6 @@ toc: false
 
 <div class="hx:mt-12 hx:mb-8 hx:text-center">
 
-{{< hextra/hero-headline >}}
-  OpenClaw 日本語活用Wiki
-{{< /hextra/hero-headline >}}
-
-</div>
-
-<div class="hx:mb-12">
-
 {{< hextra/hero-subtitle >}}
   コミュニティで育てる実践ガイド &nbsp;<br class="hx:sm:block hx:hidden" />
   OpenClawを日本語環境で快適に使うための実践的な情報を共有
@@ -20,13 +12,7 @@ toc: false
 
 </div>
 
-<div class="hx:mb-12 hx:text-center">
-
-{{< hextra/hero-button text="始める →" link="/docs" >}}
-
-</div>
-
-<div class="hx:mt-16"></div>
+<div class="hx:mt-8"></div>
 
 ## 📚 主要コンテンツ
 
