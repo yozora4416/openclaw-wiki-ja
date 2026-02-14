@@ -18,7 +18,7 @@ OpenClawを日本語環境で活用するためのガイド・Tips・トラブ�
 <div class="hx:mt-6"></div>
 
 {{< cards >}}
-  {{< card link="/wiki-notes/webchat-ja" title="WebChat日本語化パッチ" subtitle="WebChat UIを日本語化する方法 | タグ: 日本語化, カスタマイズ" icon="language" >}}
+  {{< card link="/wiki-notes/webchat-ja" title="WebChat日本語化パッチ" subtitle="WebChat UIを日本語化する方法 | タグ: 日本語化, カスタマイズ" >}}
 {{< /cards >}}
 
 ---

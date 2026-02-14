@@ -33,9 +33,9 @@ WebChat UIの詳細設定を行い、より快適な環境を構築します。
 <div class="hx:mt-6"></div>
 
 {{< cards >}}
-  {{< card link="/setup/getting-started" title="1. インストールと初期設定" subtitle="OpenClawのインストールから起動までの基本手順 | 所要時間: 15分" icon="rocket" >}}
+  {{< card link="/setup/getting-started" title="1. インストールと初期設定" subtitle="OpenClawのインストールから起動までの基本手順 | 所要時間: 15分" >}}
   {{< card link="/setup/webchat-settings" title="2. WebChat設定リファレンス" subtitle="WebChat UIの設定項目と使い方の詳細ガイド | 所要時間: 10分" icon="cog" >}}
-  {{< card link="/setup/migration-from-clawdbot" title="3. Clawdbotからの移行" subtitle="Clawdbot環境からOpenClawへの移行手順とトラブルシューティング | 所要時間: 30分" icon="arrow-path" >}}
+  {{< card link="/setup/migration-from-clawdbot" title="3. Clawdbotからの移行" subtitle="Clawdbot環境からOpenClawへの移行手順とトラブルシューティング | 所要時間: 30分" >}}
 {{< /cards >}}
 
 ---
