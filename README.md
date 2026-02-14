@@ -1,6 +1,7 @@
 # OpenClaw 日本語活用Wiki
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.155.3-blue.svg)](https://gohugo.io/)
+[![Hextra](https://img.shields.io/badge/Theme-Hextra-blue.svg)](https://imfing.github.io/hextra/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **コミュニティで育てる実践ガイド**
@@ -36,8 +37,11 @@ OpenClawを日本語環境で快適に使うための実践的な情報を共有
 
 ```bash
 # リポジトリをクローン
-git clone --recurse-submodules https://github.com/YOUR-USERNAME/openclaw-wiki-ja.git
+git clone https://github.com/YOUR-USERNAME/openclaw-wiki-ja.git
 cd openclaw-wiki-ja
+
+# Hugoモジュールをダウンロード
+hugo mod get
 
 # Hugoサーバーを起動
 hugo server -D
@@ -45,6 +49,8 @@ hugo server -D
 # ブラウザで確認
 # http://localhost:1313
 ```
+
+> **注**: ローカルでの起動にはGo 1.23以上が必要です。Goのインストール方法は[公式サイト](https://go.dev/doc/install)をご覧ください。
 
 ---
 
@@ -89,10 +95,10 @@ hugo server -D
 | 技術 | 用途 |
 |------|------|
 | **Hugo** | 静的サイトジェネレータ |
-| **Hugo Book テーマ** | Wikiテーマ |
+| **Hextra** | モダンなドキュメントテーマ（Hugo Module方式） |
 | **GitHub Pages** | ホスティング |
 | **GitHub Actions** | 自動ビルド・デプロイ |
-| **Flexsearch** | 全文検索（クライアントサイド） |
+| **FlexSearch** | 全文検索（クライアントサイド） |
 
 ---
 
@@ -115,11 +121,13 @@ openclaw-wiki-ja/
 ├── static/                     # 静的ファイル
 │   ├── images/                 # 画像
 │   └── css/                    # カスタムCSS
+├── i18n/                       # 国際化設定
+│   └── ja.yaml                 # 日本語翻訳
 ├── archetypes/
 │   └── default.md              # 記事テンプレート
-├── themes/
-│   └── hugo-book/              # Hugo Bookテーマ（submodule）
 ├── hugo.toml                   # Hugo設定ファイル
+├── go.mod                      # Go Modules設定
+├── go.sum                      # Go Modulesチェックサム
 ├── CONTRIBUTING.md             # 貢献ガイド
 ├── README.md                   # このファイル
 └── LICENSE                     # ライセンス
@@ -131,9 +139,9 @@ openclaw-wiki-ja/
 
 ### 必要なツール
 
-- **Hugo** 0.155.3以上（Extended版推奨）
+- **Hugo** 0.155.3以上（Extended版必須）
+- **Go** 1.23以上（Hugo Module方式のため）
 - **Git** 2.x以上
-- **Node.js** 18.x以上（オプション）
 
 ### Hugoのインストール
 
@@ -148,12 +156,30 @@ brew install hugo
 # https://gohugo.io/installation/
 ```
 
+### Goのインストール
+
+```bash
+# 公式サイトからダウンロード
+# https://go.dev/doc/install
+
+# または（macOS）
+brew install go
+
+# または（Linux）
+wget https://go.dev/dl/go1.23.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+```
+
 ### ローカル開発
 
 ```bash
-# リポジトリをクローン（submodule含む）
-git clone --recurse-submodules https://github.com/YOUR-USERNAME/openclaw-wiki-ja.git
+# リポジトリをクローン
+git clone https://github.com/YOUR-USERNAME/openclaw-wiki-ja.git
 cd openclaw-wiki-ja
+
+# Hugoモジュールをダウンロード
+hugo mod get
 
 # Hugoサーバーを起動（ライブリロード有効）
 hugo server -D
@@ -194,21 +220,15 @@ mainブランチへプッシュ
   ↓
 GitHub Actions自動実行
   ↓
+Go環境セットアップ
+  ↓
+Hugo Moduleダウンロード
+  ↓
 Hugoビルド
   ↓
 GitHub Pagesにデプロイ
   ↓
 https://YOUR-USERNAME.github.io/openclaw-wiki-ja/ 更新
-```
-
-### 手動デプロイ（必要な場合）
-
-```bash
-# ビルド
-hugo --minify
-
-# public/ ディレクトリをgh-pagesブランチにデプロイ
-# （通常は不要、GitHub Actionsが自動実行）
 ```
 
 ---
@@ -223,7 +243,7 @@ hugo --minify
 
 - **OpenClaw公式サイト**: [https://openclaw.io](https://openclaw.io)
 - **Hugo**: [https://gohugo.io](https://gohugo.io)
-- **Hugo Book テーマ**: [https://github.com/alex-shpak/hugo-book](https://github.com/alex-shpak/hugo-book)
+- **Hextraテーマ**: [https://imfing.github.io/hextra/](https://imfing.github.io/hextra/)
 - **GitHub Issues**: [Issues](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/issues)
 - **GitHub Discussions**: [Discussions](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/discussions)
 

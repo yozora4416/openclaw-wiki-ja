@@ -3,7 +3,8 @@ title: "このWikiへの貢献方法"
 weight: 100
 description: "OpenClaw日本語WikiへPull Requestを送る方法と記事執筆ガイドライン"
 tags: ["貢献", "コミュニティ", "執筆ガイド"]
-bookToc: true
+toc: true
+type: docs
 ---
 
 # このWikiへの貢献方法

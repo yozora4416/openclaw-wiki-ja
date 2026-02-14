@@ -1,67 +1,57 @@
 ---
-title: "OpenClaw 日本語活用Wiki"
-type: docs
-weight: 1
-bookToc: false
+title: OpenClaw 日本語活用Wiki
+toc: false
 ---
 
-# OpenClaw 日本語活用Wiki
+<div class="hx:mt-12 hx:mb-8 hx:text-center">
 
-**コミュニティで育てる実践ガイド**
+{{< hextra/hero-headline >}}
+  OpenClaw 日本語活用Wiki
+{{< /hextra/hero-headline >}}
 
----
+</div>
 
-## ようこそ！
+<div class="hx:mb-12">
 
-OpenClaw 日本語活用Wikiへようこそ！このサイトは、**OpenClawを日本語環境で快適に使うための実践的な情報**を共有するコミュニティ主導のWikiです。
+{{< hextra/hero-subtitle >}}
+  コミュニティで育てる実践ガイド &nbsp;<br class="hx:sm:block hx:hidden" />
+  OpenClawを日本語環境で快適に使うための実践的な情報を共有
+{{< /hextra/hero-subtitle >}}
 
-公式ドキュメントの翻訳ではなく、日本語ユーザー特有の課題解決やカスタマイズ方法、活用事例を中心に扱います。
+</div>
 
----
+<div class="hx:mb-12 hx:text-center">
 
-## 📚 カテゴリ
+{{< hextra/hero-button text="始める →" link="/docs" >}}
 
-### 🚀 [セットアップ]({{< relref "/setup" >}})
-OpenClawのインストールから初期設定まで、日本語環境でのセットアップ手順を解説します。
+</div>
 
-- [OpenClawセットアップガイド]({{< relref "/setup/getting-started" >}}) - 基本的なインストール〜起動まで
-- [WebChat設定ガイド]({{< relref "/setup/webchat-settings" >}}) - WebChatダッシュボードの設定項目解説
+<div class="hx:mt-16"></div>
 
-### 🎨 [カスタマイズ]({{< relref "/customize" >}})
-日本語UIパッチの導入や、設定のカスタマイズ方法を紹介します。
+## 📚 主要コンテンツ
 
-- [WebChat日本語化パッチ]({{< relref "/customize/webchat-ja" >}}) - UIを日本語化する方法
+<div class="hx:mt-6"></div>
 
-### 🤝 [貢献する]({{< relref "/contribute" >}})
-このWikiへの記事追加・修正方法を解説します。
+{{< cards cols="3" >}}
+  {{< card link="/setup" title="🚀 セットアップ" subtitle="OpenClawのインストールから初期設定まで、日本語環境でのセットアップ手順を解説します。" >}}
+  {{< card link="/customize" title="🎨 カスタマイズ" subtitle="日本語UIパッチの導入や、設定のカスタマイズ方法を紹介します。" >}}
+  {{< card link="/contribute" title="🤝 貢献する" subtitle="このWikiへの記事追加・修正方法を解説します。誰でも貢献できます。" >}}
+{{< /cards >}}
 
-- [このWikiへの貢献方法]({{< relref "/contribute" >}}) - PR出し方、記事テンプレート
-
----
+<div class="hx:mt-16"></div>
 
 ## 🌟 このWikiの特徴
 
-### ✅ 実践重視
-実際の使用事例やTipsを中心に、すぐに役立つ情報を提供します。
+<div class="hx:mt-6"></div>
 
-### ✅ 日本語最適化
-日本語環境特有の問題や解決策を扱います。
+{{< cards cols="2" >}}
+  {{< card title="✅ 実践重視" subtitle="実際の使用事例やTipsを中心に、すぐに役立つ情報を提供します。" >}}
+  {{< card title="✅ 日本語最適化" subtitle="日本語環境特有の問題や解決策を扱います。" >}}
+  {{< card title="✅ コミュニティ駆動" subtitle="GitHub PRベースの共同編集で、誰でも記事を追加・改善できます。" >}}
+  {{< card title="✅ 最新情報" subtitle="コミュニティメンバーが定期的に内容を更新します。" >}}
+{{< /cards >}}
 
-### ✅ コミュニティ駆動
-GitHub PRベースの共同編集で、誰でも記事を追加・改善できます。
-
-### ✅ 最新情報
-コミュニティメンバーが定期的に内容を更新します。
-
----
-
-## 🚀 はじめに
-
-OpenClawが初めての方は、まず[セットアップガイド]({{< relref "/setup/getting-started" >}})をご覧ください。
-
-すでにOpenClawを使っている方は、[カスタマイズ]({{< relref "/customize" >}})セクションで日本語化や設定の最適化方法をご確認いただけます。
-
----
+<div class="hx:mt-16"></div>
 
 ## 💡 貢献のお願い
 
@@ -71,7 +61,7 @@ OpenClawが初めての方は、まず[セットアップガイド]({{< relref "
 - 誤字・リンク切れの修正
 - 新しい活用事例の共有
 
-など、どんな貢献も歓迎します！詳しくは[貢献ガイド]({{< relref "/contribute" >}})をご覧ください。
+など、どんな貢献も歓迎します！詳しくは[貢献ガイド](/contribute)をご覧ください。
 
 ---
 
@@ -80,12 +70,6 @@ OpenClawが初めての方は、まず[セットアップガイド]({{< relref "
 OpenClawは、Claude AIをローカル環境で活用するためのオープンソースプラットフォームです。WebChat UIを通じて、Claudeとの対話、ファイル操作、ブラウザ制御、タスク自動化などを統合的に行えます。
 
 **公式サイト**: [https://openclaw.io](https://openclaw.io)
-
----
-
-## 📝 ライセンス
-
-このWikiのコンテンツは、特記なき限りMITライセンスの下で公開されています。
 
 ---
 

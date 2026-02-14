@@ -32,12 +32,14 @@ OpenClaw 日本語活用Wikiへのご貢献ありがとうございます！
 git clone https://github.com/YOUR-USERNAME/openclaw-wiki-ja.git
 cd openclaw-wiki-ja
 
-# テーマのsubmoduleを取得
-git submodule update --init --recursive
+# Hugoモジュールをダウンロード
+hugo mod get
 
 # Hugoサーバーを起動（プレビュー用）
 hugo server -D
 ```
+
+> **注**: ローカルでの起動にはGo 1.23以上が必要です。Goのインストール方法は[公式サイト](https://go.dev/doc/install)をご覧ください。
 
 ### 3. ブランチを作成して作業
 

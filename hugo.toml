@@ -1,58 +1,14 @@
 baseURL = 'https://YOUR-USERNAME.github.io/openclaw-wiki-ja/'
 languageCode = 'ja-JP'
 title = 'OpenClaw 日本語活用Wiki'
-theme = 'hugo-book'
 
-# Hugo Book テーマ設定
-[params]
-  # 検索機能有効化
-  BookSearch = true
-  # リポジトリURL（編集リンク表示用）
-  BookRepo = 'https://github.com/YOUR-USERNAME/openclaw-wiki-ja'
-  # 編集リンク有効化
-  BookEditPath = 'edit/main/content'
-  # 目次表示
-  BookToC = true
-  # ダークモード
-  BookTheme = 'auto'  # light, dark, auto
-  # セクション表示
-  BookSection = '*'
-  # メニュー折りたたみ
-  BookMenuBundle = '/menu'
-  # Favicon
-  BookLogo = '/images/logo.png'
-  # コメント欄無効化
-  BookComments = false
-  # ページナビゲーション
-  BookPageNavigation = true
-  # パンくずリスト
-  BookBreadcrumb = true
-
-# メニュー設定
-[menu]
-  [[menu.before]]
-    name = "GitHub"
-    url = "https://github.com/YOUR-USERNAME/openclaw-wiki-ja"
-    weight = 10
-
-# マークアップ設定
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true  # HTML埋め込み許可
-  [markup.highlight]
-    style = 'monokai'
-    lineNos = true
-    lineNumbersInTable = true
-    codeFences = true
-    guessSyntax = true
-    noClasses = false
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+# Hextra テーマ設定（Hugo Module方式）
+[module]
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
 
 # 言語設定
+defaultContentLanguage = 'ja'
 [languages]
   [languages.ja]
     languageName = '日本語'
@@ -60,9 +16,84 @@ theme = 'hugo-book'
     [languages.ja.params]
       description = 'OpenClawの日本語活用Wiki - コミュニティで育てる実践ガイド'
 
+# メニュー設定
+[menu]
+  [[menu.main]]
+    name = "ドキュメント"
+    pageRef = "/docs"
+    weight = 1
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/YOUR-USERNAME/openclaw-wiki-ja"
+    weight = 2
+    [menu.main.params]
+      icon = "github"
+  [[menu.main]]
+    identifier = "search"
+    name = "検索"
+    weight = 3
+    [menu.main.params]
+      type = "search"
+  [[menu.main]]
+    identifier = "theme-toggle"
+    weight = 4
+    [menu.main.params]
+      type = "theme-toggle"
+
+# Hextra パラメーター
+[params]
+  description = 'OpenClawの日本語活用Wiki - コミュニティで育てる実践ガイド'
+
+  # Navbar設定
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+
+  # Page設定
+  [params.page]
+    # wide (90rem), normal (1280px)
+    width = "normal"
+
+  # Theme設定
+  [params.theme]
+    # light | dark | system
+    default = "system"
+    displayToggle = true
+
+  # 検索設定
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    
+    [params.search.flexsearch]
+      # content | summary | heading | title
+      index = "content"
+      # full | forward | reverse | strict
+      tokenize = "forward"
+
+  # 編集リンク設定
+  [params.editURL]
+    enable = true
+    base = "https://github.com/YOUR-USERNAME/openclaw-wiki-ja/edit/main"
+
+  # フッター設定
+  [params.footer]
+    displayCopyright = true
+    displayPoweredBy = true
+
+# マークアップ設定
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
 # 出力形式
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']  # JSON for search index
+  home = ['HTML', 'RSS', 'JSON']
+  page = ['HTML']
+  section = ['HTML', 'RSS']
 
 # セキュリティ設定
 [security]
