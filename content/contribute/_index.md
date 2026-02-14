@@ -67,7 +67,7 @@ OpenClaw 日本語活用Wikiへようこそ！
 - 本番環境での利用前に、テスト環境で動作確認することを推奨します
 - Wikiの情報によって生じた損害について、Wikiの運営者・貢献者は責任を負いません
 
-不明な点や不安な点があれば、[GitHub Discussions](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/discussions)で質問してください。
+不明な点や不安な点があれば、[GitHub Discussions](https://github.com/yozora4416/openclaw-wiki-ja/discussions)で質問してください。
 {{< /callout >}}
 
 ### 外部リンクについて
@@ -130,7 +130,7 @@ OpenClaw 日本語活用Wikiは、すべての参加者にとって安全で建�
 
 ### ステップ1: リポジトリをFork
 
-1. [GitHubリポジトリ](https://github.com/YOUR-USERNAME/openclaw-wiki-ja)にアクセス
+1. [GitHubリポジトリ](https://github.com/yozora4416/openclaw-wiki-ja)にアクセス
 2. 右上の **Fork** ボタンをクリック
 3. あなたのアカウントにリポジトリがコピーされます
 
@@ -138,7 +138,7 @@ OpenClaw 日本語活用Wikiは、すべての参加者にとって安全で建�
 
 ```bash
 # Forkしたリポジトリをクローン
-git clone https://github.com/YOUR-USERNAME/openclaw-wiki-ja.git
+git clone https://github.com/yozora4416/openclaw-wiki-ja.git
 cd openclaw-wiki-ja
 
 # テーマのsubmoduleを取得
@@ -463,7 +463,7 @@ Hextraのcalloutを使用：
 
 ### Q: 記事のアイデアはあるけど、書く時間がない
 
-**A:** [GitHub Issues](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/issues)でアイデアを共有してください。他の方が執筆するかもしれません。
+**A:** [GitHub Issues](https://github.com/yozora4416/openclaw-wiki-ja/issues)でアイデアを共有してください。他の方が執筆するかもしれません。
 
 ### Q: レビューで修正依頼が来たらどうすれば？
 
@@ -488,7 +488,7 @@ git push origin add/article-name
 - 記事の品質管理
 - コミュニティサポート
 
-興味がある方は、[GitHub Discussions](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/discussions)でご連絡ください。
+興味がある方は、[GitHub Discussions](https://github.com/yozora4416/openclaw-wiki-ja/discussions)でご連絡ください。
 
 ---
 
@@ -496,8 +496,8 @@ git push origin add/article-name
 
 ### 質問・議論
 
-- [GitHub Discussions](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/discussions) - 一般的な質問や議論
-- [GitHub Issues](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/issues) - バグ報告や機能提案
+- [GitHub Discussions](https://github.com/yozora4416/openclaw-wiki-ja/discussions) - 一般的な質問や議論
+- [GitHub Issues](https://github.com/yozora4416/openclaw-wiki-ja/issues) - バグ報告や機能提案
 
 ### リアルタイムチャット
 

@@ -80,7 +80,7 @@ WebChat UIの詳細設定を行い、より快適な環境を構築します。
 
 ## サポート
 
-セットアップに関するご質問は、[GitHub Discussions](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/discussions)でお気軽にお尋ねください。
+セットアップに関するご質問は、[GitHub Discussions](https://github.com/yozora4416/openclaw-wiki-ja/discussions)でお気軽にお尋ねください。
 
 ---
 

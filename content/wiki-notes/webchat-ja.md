@@ -54,7 +54,7 @@ OpenClaw WebChatダッシュボードUIを日本語化するパッチの導入�
 
 ```bash
 # パッチをダウンロード
-wget https://raw.githubusercontent.com/YOUR-USERNAME/openclaw-webchat-ja/main/scripts/apply.sh
+wget https://raw.githubusercontent.com/yozora4416/openclaw-webchat-ja/main/scripts/apply.sh
 
 # 実行権限を付与
 chmod +x apply.sh
@@ -67,7 +67,7 @@ chmod +x apply.sh
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/YOUR-USERNAME/openclaw-webchat-ja.git
+git clone https://github.com/yozora4416/openclaw-webchat-ja.git
 cd openclaw-webchat-ja
 
 # パッチを適用
@@ -80,7 +80,7 @@ OpenClawのskillsディレクトリに配置する方法です。
 
 ```bash
 # OpenClaw skillsディレクトリにクローン
-git clone https://github.com/YOUR-USERNAME/openclaw-webchat-ja.git \
+git clone https://github.com/yozora4416/openclaw-webchat-ja.git \
   /root/clawd/skills/webchat-ja
 
 cd /root/clawd/skills/webchat-ja
@@ -205,7 +205,7 @@ find /root/.nvm -name "index-*.js" -path "*/control-ui/assets/*"
 
 ### 一部の文字列が翻訳されていない
 
-UIが更新されて新しい文字列が追加された可能性があります。[GitHubリポジトリ](https://github.com/YOUR-USERNAME/openclaw-webchat-ja)にIssueを報告してください。
+UIが更新されて新しい文字列が追加された可能性があります。[GitHubリポジトリ](https://github.com/yozora4416/openclaw-webchat-ja)にIssueを報告してください。
 
 ### パッチ適用後にUIが壊れた
 
@@ -224,17 +224,17 @@ openclaw gateway restart
 
 より良い翻訳の提案を歓迎します！
 
-1. [翻訳マップ](https://github.com/YOUR-USERNAME/openclaw-webchat-ja/blob/main/translation-map.md)で既存の翻訳を確認
+1. [翻訳マップ](https://github.com/yozora4416/openclaw-webchat-ja/blob/main/translation-map.md)で既存の翻訳を確認
 2. 実際のUIで翻訳をテスト
 3. GitHubでIssueを作成、またはPull Requestを送信
 
-詳しくは[リポジトリのCONTRIBUTING.md](https://github.com/YOUR-USERNAME/openclaw-webchat-ja/blob/main/CONTRIBUTING.md)をご覧ください。
+詳しくは[リポジトリのCONTRIBUTING.md](https://github.com/yozora4416/openclaw-webchat-ja/blob/main/CONTRIBUTING.md)をご覧ください。
 
 ---
 
 ## 関連リンク
 
-- [openclaw-webchat-ja GitHubリポジトリ](https://github.com/YOUR-USERNAME/openclaw-webchat-ja)
+- [openclaw-webchat-ja GitHubリポジトリ](https://github.com/yozora4416/openclaw-webchat-ja)
 - [WebChat設定ガイド]({{< relref "/setup/webchat-settings" >}})
 - [OpenClaw公式サイト](https://openclaw.io)
 
