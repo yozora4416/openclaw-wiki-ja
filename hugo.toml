@@ -48,7 +48,12 @@ defaultContentLanguage = 'ja'
   # Navbar設定
   [params.navbar]
     displayTitle = true
-    displayLogo = false
+    displayLogo = true
+    [params.navbar.logo]
+      path = "images/openclaw-logo-text.png"
+      dark = "images/openclaw-logo-text-dark.png"
+      width = 120
+      height = 28
 
   # Page設定
   [params.page]
