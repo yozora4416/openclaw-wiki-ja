@@ -1,21 +1,119 @@
 ---
-title: "このWikiへの貢献方法"
-weight: 100
-description: "OpenClaw日本語WikiへPull Requestを送る方法と記事執筆ガイドライン"
-tags: ["貢献", "コミュニティ", "執筆ガイド"]
+title: "貢献ガイドと利用規約"
+weight: 30
+description: "OpenClaw日本語Wikiの利用規約、貢献方法、行動規範"
+tags: ["貢献", "コミュニティ", "執筆ガイド", "利用規約"]
 toc: true
 type: docs
 ---
 
-# このWikiへの貢献方法
+# 貢献ガイドと利用規約
 
-OpenClaw 日本語活用Wikiへのご貢献ありがとうございます！
+OpenClaw 日本語活用Wikiへようこそ！
 
-このページでは、記事の追加・修正方法を解説します。
+このページでは、Wikiの目的、利用規約、貢献方法について説明します。
 
 ---
 
-## 貢献の種類
+## このWikiについて
+
+### Wikiの目的
+
+**OpenClaw 日本語活用Wiki**は、OpenClawを日本語環境で活用するための**非公式コミュニティWiki**です。
+
+- 日本語ユーザー向けの実践的な情報を共有
+- 公式ドキュメントを補完するTipsやトラブルシューティング
+- コミュニティの知見を集約し、検索しやすい形で提供
+- 初心者から上級者まで、誰もが貢献できるオープンな場
+
+{{< callout type="info" >}}
+**非公式Wikiです**: このWikiはOpenClaw公式プロジェクトではなく、コミュニティによって運営されています。公式情報は[OpenClaw公式サイト](https://openclaw.io)をご覧ください。
+{{< /callout >}}
+
+---
+
+## 利用規約
+
+### コンテンツのライセンス
+
+このWikiのすべてのコンテンツは、特に断りのない限り、**[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)** ライセンスの下で提供されています。
+
+**これは以下を意味します：**
+
+✅ **自由に利用可能**
+- コンテンツを自由にコピー、再配布できます
+- 営利目的での利用も可能です
+- 改変・翻訳・リミックスが可能です
+
+📝 **条件**
+- **表示**: 適切なクレジット（著作者名、リンク、変更の有無）を表示してください
+- **継承**: 改変した作品も同じライセンス（CC BY-SA 4.0）で公開してください
+
+### コード例のライセンス
+
+記事内のコード例（スクリプト、設定ファイルサンプル等）は、特に断りのない限り、**[MIT License](https://opensource.org/licenses/MIT)** の下で提供されます。
+
+自由にコピー、改変、商用利用が可能です（著作権表示は推奨）。
+
+### 免責事項
+
+{{< callout type="warning" >}}
+**重要: 情報は無保証です**
+
+このWikiの情報は、コミュニティメンバーが善意で提供していますが、正確性や安全性を保証するものではありません。
+
+- 情報の利用は**自己責任**でお願いします
+- 記載された手順を実行する前に、必ずバックアップを取ってください
+- 本番環境での利用前に、テスト環境で動作確認することを推奨します
+- Wikiの情報によって生じた損害について、Wikiの運営者・貢献者は責任を負いません
+
+不明な点や不安な点があれば、[GitHub Discussions](https://github.com/YOUR-USERNAME/openclaw-wiki-ja/discussions)で質問してください。
+{{< /callout >}}
+
+### 外部リンクについて
+
+Wikiには外部サイトへのリンクが含まれますが、リンク先の内容についてWiki運営者は責任を負いません。
+
+---
+
+## 行動規範
+
+### 基本原則
+
+OpenClaw 日本語活用Wikiは、すべての参加者にとって安全で建設的な場であることを目指しています。
+
+以下の行動規範を守ってください：
+
+✅ **推奨される行動**
+- **敬意を持って**: 他の貢献者やユーザーを尊重する
+- **建設的に**: 批判ではなく、改善提案を
+- **初心者に優しく**: 質問には丁寧に答える
+- **多様性を歓迎**: 異なる視点や経験を尊重する
+- **オープンに**: 議論や意思決定をオープンに行う
+
+❌ **禁止される行動**
+- 不適切な言葉遣いや攻撃的な表現
+- ハラスメント（人種、性別、宗教、性的指向等に基づく）
+- スパムや宣伝目的の投稿
+- 他者の著作権を侵害する内容の投稿
+- 虚偽の情報や未検証の内容の意図的な投稿
+- 個人情報の無断公開
+
+### 違反への対応
+
+行動規範に違反する行為を発見した場合は、GitHubのIssueまたはメンテナーに報告してください。
+
+メンテナーは以下の措置を取る権限を持ちます：
+- 警告の発行
+- コンテンツの削除
+- プルリクエストの却下
+- リポジトリへのアクセス制限
+
+---
+
+## 貢献方法
+
+### 貢献の種類
 
 以下のような貢献を歓迎します：
 
@@ -69,8 +167,8 @@ Hugoコマンドで記事のテンプレートを生成：
 # 例: セットアップカテゴリに新規記事を追加
 hugo new content/setup/new-article.md
 
-# 例: カスタマイズカテゴリに新規記事を追加
-hugo new content/customize/new-customization.md
+# 例: Wikiノートカテゴリに新規記事を追加
+hugo new content/wiki-notes/new-tip.md
 ```
 
 生成されたファイルを編集して、内容を書いていきます。
@@ -144,12 +242,9 @@ GitHubでプルリクエストを作成：
 | ディレクトリ | 用途 |
 |-------------|------|
 | `content/setup/` | セットアップ・インストール関連 |
-| `content/customize/` | カスタマイズ・設定関連 |
-| `content/use-cases/` | 活用事例 |
-| `content/troubleshooting/` | トラブルシューティング |
-| `content/tips/` | Tips & Tricks |
-| `content/skills/` | Skillガイド |
-| `content/contribute/` | 貢献ガイド |
+| `content/wiki-notes/` | Tips、ガイド、トラブルシューティング |
+| `content/releases/` | リリースノート（日本語版） |
+| `content/contribute/` | 貢献ガイド・利用規約 |
 
 ### ファイル名規則
 
@@ -174,7 +269,6 @@ title: "記事タイトル"
 weight: 10
 description: "記事の概要（100文字程度、SEO用）"
 tags: ["タグ1", "タグ2", "タグ3"]
-bookToc: true  # 目次を表示
 draft: false   # 公開状態（true=下書き）
 ---
 ```
@@ -261,7 +355,7 @@ console.log("Hello!");
 
 #### 注意書き・ヒント
 
-Hugo Bookテーマのショートコードを使用：
+Hextraのcalloutを使用：
 
 ```markdown
 {{< callout type="info" >}}
@@ -270,10 +364,6 @@ Hugo Bookテーマのショートコードを使用：
 
 {{< callout type="warning" >}}
 **警告**: 注意が必要な内容。
-{{< /callout >}}
-
-{{< callout type="error" >}}
-**危険**: 重要な警告。
 {{< /callout >}}
 ```
 
@@ -357,55 +447,6 @@ Hugo Bookテーマのショートコードを使用：
 
 ---
 
-## 記事テンプレート
-
-新規記事作成時のテンプレートは `archetypes/default.md` に定義されています。
-
-```markdown
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-weight: 10
-description: "記事の概要（100文字程度）"
-tags: []
-bookToc: true
-draft: false
----
-
-# {{ replace .Name "-" " " | title }}
-
-## 概要
-この記事では〜について説明します。
-
-## 前提条件
-- OpenClaw がインストール済み
-- （必要に応じて追加）
-
-## 手順
-
-### ステップ1: XXX
-説明文
-
-```bash
-# コマンド例
-command here
-```
-
-### ステップ2: XXX
-説明文
-
-## まとめ
-この記事では〜を解説しました。
-
-## 関連記事
-- （関連記事を追加予定）
-
-## 参考リンク
-- [公式ドキュメント](https://example.com)
-```
-
----
-
 ## よくある質問
 
 ### Q: Hugoの知識がなくても貢献できますか？
@@ -451,24 +492,6 @@ git push origin add/article-name
 
 ---
 
-## 行動規範
-
-### 尊重と協力
-
-- 他の貢献者を尊重する
-- 建設的なフィードバックを心がける
-- 初心者に優しく接する
-- 多様な視点を歓迎する
-
-### 禁止事項
-
-- 不適切な言葉遣いや攻撃的な表現
-- スパムや宣伝目的の投稿
-- 他者の著作権を侵害する内容
-- 虚偽の情報や未検証の内容
-
----
-
 ## サポートとコミュニケーション
 
 ### 質問・議論
@@ -485,9 +508,10 @@ git push origin add/article-name
 ## 関連リンク
 
 - [OpenClaw公式サイト](https://openclaw.io)
+- [OpenClaw GitHub](https://github.com/openclaw/openclaw)
 - [Hugo ドキュメント](https://gohugo.io/documentation/)
 - [Markdown ガイド](https://www.markdownguide.org/)
-- [Hugo Book テーマ](https://github.com/alex-shpak/hugo-book)
+- [Hextra テーマ](https://imfing.github.io/hextra/)
 
 ---
 
