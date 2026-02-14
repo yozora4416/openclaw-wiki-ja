@@ -1,6 +1,7 @@
 ---
 title: OpenClaw 日本語Wiki
 toc: false
+type: docs
 ---
 
 <style>.article-container h1:first-of-type, main > .content > h1:first-child, article h1:first-of-type { display: none; }</style>
